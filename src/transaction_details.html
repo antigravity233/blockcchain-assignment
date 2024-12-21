@@ -1,0 +1,38 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.2.7-rc.0/web3.min.js"></script>
+    <link rel="stylesheet" href="css/transaction_details.css">
+    <title>Equinox</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div id="nav">
+        <img src="img/logo.png" alt="logo" id="logo">
+        <a class="back main-side" href="javascript:history.back()">Back</a>
+    </div>
+
+    <div id="title">
+        <p>Transaction Details <span>#</span></p>
+    </div>
+
+    <div id="content">
+
+        
+    </div>
+</body>
+<script src="js/connectContract.js"></script>
+<script src="js/transaction_details.js"></script>
+<script>
+    (async function () {
+        await accessToMetamask();
+        loadDetails();
+        loadAddOnDetails();
+        loadValidateBuyerDetails();
+        loadValidateShopDetails();
+    })();
+</script>
+</html>

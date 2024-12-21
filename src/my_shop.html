@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.2.7-rc.0/web3.min.js"></script>
+    <link rel="stylesheet" href="css/my_shop.css">
+    <title>Equinox</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <div id="nav">
+        <img src="img/m_logo.png" alt="logo" id="logo">
+        <p class="merchant-side">Merchant Side</p>
+        <a class="back merchant-side" href="javascript:history.back()">Back</a>
+    </div>
+
+    <div id="background-banner">
+        
+        <a href="new_product.html" id="newproduct">New Product</a>
+    </div>
+
+    <div id="product-list">
+        <div id="temprow">
+            <p id="title">My Products</p>
+            <p id="balance">Market Place Token(MTG) Balance: <span>0</span></p>
+            <a href="product_details.html?productName=${prod_name[i]}" class="product">
+                <div>
+                    <p class="num">${i+1}.</p>
+                    <p class="prod-name"><span>product:</span>${prod_name[i]}</p>
+                    <p class="prod-stock"><span>stock:</span>${prod_stock[i]}</p>
+                    <p class="prod-price"><span>price:</span>${prod_price[i]} MGT</p>
+                </div>
+                <img src="img/play.png" alt="visit">
+            </a>
+        </div>
+        
+    </div>
+</body>
+<script src="js/connectContract.js"></script>
+<script src="js/my_shop.js"></script>
+<script>
+    (async function() {
+        await accessToMetamask();
+        getShopProducts();
+        checkMerchantBalance();
+    })();
+
+    window.addEventListener("pageshow", function (event) {
+        var historyTraversal = event.persisted ||
+            (typeof window.performance != "undefined" &&
+                window.performance.navigation.type === 2);
+        if (historyTraversal) {
+            // Handle page restore.
+            window.location.reload();
+        }
+    });
+</script>
+</html>

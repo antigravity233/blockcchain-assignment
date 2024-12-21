@@ -1,0 +1,52 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.2.7-rc.0/web3.min.js"></script>
+    <link rel="stylesheet" href="css/buy_product.css">
+    <title>Equinox</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div id="nav">
+        <img src="img/b_logo.png" alt="logo" id="logo">
+        <p class="buyer-side">Buyer Side</p>
+        <a class="back buyer-side" href="javascript:history.back()">Back</a>
+    </div>
+
+    <div id="background-banner">
+        <!-- search bar -->
+        <a href="top_up.html" id="topup">Top up</a>
+    </div>
+
+    <div id="merchant-list">
+        <div id="temprow">
+            <p id="title">Shops</p>
+            <p id="balance">Market Place Token(MTG) Balance: <span>0</span></p>
+        </div>
+    </div>
+</body>
+<script src="js/connectContract.js"></script>
+<script src="js/buy_product.js"></script>
+<script>
+    (async function () {
+        await accessToMetamask();
+        loadAllShop();
+        checkBuyerBalance();
+    })();
+
+    window.addEventListener("pageshow", function (event) {
+        var historyTraversal = event.persisted ||
+            (typeof window.performance != "undefined" &&
+                window.performance.navigation.type === 2);
+        if (historyTraversal) {
+            // Handle page restore.
+            window.location.reload();
+        }
+    });
+
+</script>
+
+</html>

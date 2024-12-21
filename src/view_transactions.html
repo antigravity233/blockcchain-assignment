@@ -1,0 +1,101 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.2.7-rc.0/web3.min.js"></script>
+    <link rel="stylesheet" href="css/view_transaction_style.css">
+    <title>Equinox</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div id="nav">
+        <img src="img/logo.png" alt="logo" id="logo">
+        <a class="back main-side" href="javascript:history.back()">Back</a>
+    </div>
+
+    <!-- MIDDLE -->
+    <div id="background-banner">
+        <!-- search bar -->
+        <div id="search-bar">
+            <input type="text" name="keyword" id="keyword" placeholder="Search by Buyer/ Shop address">
+            <input type="button" id="search-btn" value="Search" onclick="javascript:search()">
+        </div>
+    </div>
+
+    <div id="mid-info">
+        <div id="mid-info-left">
+            <div id="total-transaction" class="mid-details">
+                <img src="img/exchange.png" alt="transactions">
+                <div>
+                    <p class="detail-title">TRANSACTIONS</p>
+                    <p class="detail-value" id="ttl-transaction">0</p>
+                </div>
+            </div>
+        </div>
+        <div id="mid-info-right">
+        </div>
+    </div>
+
+    <div id="transactions">
+        <p id="titleOfTable">Purchase Transaction</p>
+        <table>
+            <tr>
+                <td>Transaction Hash</td>
+                <td>Block</td>
+                <td>Event</td>
+                <td>ShopAddress</td>
+                <td>Stock</td>
+                <td>Product</td>
+                <td>Price</td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+
+<div id="AddOnTransactions">
+    <p id="titleOfTable">Add on Product Transaction</p>
+    <table>
+        <tr>
+            <td>Transaction Hash</td>
+            <td>Block</td>
+            <td>Event</td>
+            <td>From</td>
+            <td>To</td>
+            <td>Product</td>
+            <td>Value</td>
+        </tr>
+
+    </table>
+</div>
+</body>
+
+<div id="ValidatedTransactions">
+    <p id="titleOfTable">Validate Participant Transaction</p>
+    <table>
+        <tr>
+            <td>Transaction Hash</td>
+            <td>Block</td>
+            <td>Event</td>
+            <td>Address</td>
+            <td>Name</td>
+        </tr>
+
+    </table>
+</div>
+</body>
+<script src="js/connectContract.js"></script>
+<script src="js/view_transactions.js"></script>
+<script>
+    (async function () {
+        await accessToMetamask();
+        await loadTransaction();
+        await loadAddOnTransaction();
+        await loadValidateTransaction();
+        await displayTotalTransaction();
+    })();
+</script>
+
+</html>

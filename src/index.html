@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/index_style.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.2.7-rc.0/web3.min.js"></script>
+	<title>Equinox</title>
+</head>
+<body>
+	<!-- HEADER -->
+    <div id="nav">
+        <img src="img/logo.png" alt="logo" id="logo">
+    </div>
+
+	<div id="title">
+		<h4 id="welc">welcome to Equinox</h4>
+		<h3 id="let-start">Let's Get Started !</h3>
+	</div>
+
+	<div id="login-options">
+		<a id="viewonly" href="view_transactions.html">View Transaction</a>
+		<div id="user-options">
+			<a href="javascript:identifyBuyer()" id="buyer">I'm Buyer</a>
+			<a href="javascript:identifyShop()"id="merchant">I'm Merchant</a>
+			<a href="javascript:identifyOwner()">I'm Owner</a>
+		</div>
+	</div>
+</body>
+<script src="js/connectContract.js"></script>
+<script src="js/validateIdentity.js"></script>
+<script>
+	async function identifyBuyer() {
+		await accessToMetamask();
+		buyerIdentity();
+	} 
+	async function identifyShop() {
+		await accessToMetamask();
+		shopIdentity();
+	}
+	async function identifyOwner() {
+		await accessToMetamask();
+		ownerIdentity();
+	}
+</script>
+</html>

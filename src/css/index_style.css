@@ -1,0 +1,62 @@
+@import 'root_style.css';
+
+#title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+    background-color: var(--primary-color);
+    padding: 4% 0 1% 0;
+}
+
+#welc {
+    font-size: 3vh;
+    font-family: 'satisfy', 'Times New Roman', Times, serif;
+    font-weight: lighter;
+}
+#let-start {
+    font-family: 'shadowsintolight', 'Arial';
+    font-size: 12vh;
+    font-weight: bolder;
+    letter-spacing: .5vh;
+    transform: translateY(-2vh);
+    color: var(--deco-color);
+}
+
+#login-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#user-options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+    height: 10vh;
+}
+#viewonly {
+    background-color: var(--standout-color);
+    height: 17vh;
+    font-size: 3vh;
+}
+
+#viewonly, #user-options > a {
+    color: var(--white-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'lexenddeca', Arial, Helvetica, sans-serif;
+    border-radius: 7px;
+    text-decoration: none;
+}
+
+#viewonly, #user-options {
+    width: 40%;
+}
+
+#user-options > a {
+    width: 31%;
+    background-color: var(--primary-color);
+    font-size: 2vh;
+}

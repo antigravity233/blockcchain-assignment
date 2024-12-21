@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/validateParticipant.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.2.7-rc.0/web3.min.js"></script>
+    <title>Equinox</title>
+</head>
+
+<body>
+    <div id="nav">
+        <img src="img/o_logo.png" alt="logo" id="logo">
+        <p class="owner-side">Owner Side</p>
+        <a class="back owner-side" href="javascript:history.back()">Back</a>
+    </div>
+
+    <div id="background-banner"></div>
+
+    <div id="validate-participant">
+        <p id="title">Validate Participant</p>
+        
+        <div>
+            <p>Address</p>
+            <input type="text" name="address" id="address">
+        </div>
+        <div>
+            <p>Name</p>
+            <input type="text" name="name" id="name">
+        </div>
+        <div>
+            <p>Validate as</p>
+            <select name="type" id="type">
+                <option value="0">Buyer</option>
+                <option value="1">Merchant</option>
+            </select>
+        </div>
+        <div id="button">
+            <input type="button" name="validate-btn" id="validate-btn" value="Validate" onclick="javascript:validateParticipant()">
+        </div>
+    </div>
+</body>
+<script src="js/connectContract.js"></script>
+<script src="js/validateParticipant.js"></script>
+<script>
+    accessToMetamask();
+</script>
+</html>

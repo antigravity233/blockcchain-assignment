@@ -1,0 +1,74 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.2.7-rc.0/web3.min.js"></script>
+    <link rel="stylesheet" href="css/view_product.css">
+    <title>Equinox</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div id="nav">
+        <img src="img/b_logo.png" alt="logo" id="logo">
+        <p class="buyer-side">Buyer Side</p>
+        <a class="back buyer-side" href="javascript:history.back()">Back</a>
+    </div>
+
+    <div id="title">
+        <p></p>
+    </div>
+
+    <div id="content">
+
+        <div id="info-block-2" class="block">
+            <p id="prod-title">Products Sell by this Shop</p>
+
+            <div id="prod-list">
+                <div class="product p${i+1}">
+                    <div class="prod-name-price">
+                        <p class="prod-name">${prod_name}</p>
+                        <p class="prod-price">${prices[i]} MGT</p>
+                    </div>
+                    <p class="prod-des">${product_details[i]}</p>
+                    <div class="temp-cat">
+                        <p class="prod-cat">${category[i]}</p>
+                    </div>
+                    <input type="button" value="Buy" class="prod-btn" onclick="buyProduct('${_shop_address}', '${prod_name}', 1)">
+                </div>
+                <div class="product p${i+1}">
+                    <div class="prod-name-price">
+                        <p class="prod-name">${prod_name}</p>
+                        <p class="prod-price">${prices[i]} MGT</p>
+                    </div>
+                    <p class="prod-des">${product_details[i]}</p>
+                    <div class="temp-cat">
+                        <p class="prod-cat">${category[i]}</p>
+                    </div>
+                    <input type="button" value="Buy" class="prod-btn" onclick="buyProduct('${_shop_address}', '${prod_name}', 1)">
+                </div>
+                <div class="product p${i+1}">
+                    <div class="prod-name-price">
+                        <p class="prod-name">${prod_name}</p>
+                        <p class="prod-price">${prices[i]} MGT</p>
+                    </div>
+                    <p class="prod-des">${product_details[i]}</p>
+                    <div class="temp-cat">
+                        <p class="prod-cat">${category[i]}</p>
+                    </div>
+                    <input type="button" value="Buy" class="prod-btn" onclick="buyProduct('${_shop_address}', '${prod_name}', 1)">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/connectContract.js"></script>
+<script src="js/view_product.js"></script>
+<script>
+    (async function() {
+        await accessToMetamask();
+        loadShopDetails();
+    })();
+</script>
+</html>

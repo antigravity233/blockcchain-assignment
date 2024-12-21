@@ -1,0 +1,239 @@
+@import 'root_style.css';
+
+#background-banner {
+    background-color: var(--primary-color);
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#search-bar {
+    height: 17%;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+}
+
+#filter, #keyword {
+    background-color: #ffff;
+    outline: none;
+    border: solid .5px lightgray;
+    padding: .7%;
+    height: 100%;
+}
+
+#filter {
+    width: 11%;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+#keyword {
+    width: 35%;
+    border-radius: 7px;
+    padding-left: 2%;
+    font-size: 1.7vh;
+}
+
+#transactions {
+    background-color: #ffff;
+    width: 80%;
+    height: fit-content;
+    min-height: 30%;
+    border: solid .5px lightgray;
+    border-radius: 10px;
+    transform: translateY(-8%);
+    margin: 0 auto;
+    padding: 2% 0 1% 0;
+    margin-bottom: 2%;
+}
+
+#transactions > table {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+#transactions > table tr:first-child td {
+    font-weight: bold;
+}
+#transactions > table tr td {
+    line-height: 6vh;
+    border-bottom: solid 1px lightgray;
+}
+#transactions > table tr td:first-child {
+    padding-left: 3%;
+}
+#transactions > table tr td:last-child{
+    text-align: right;
+    padding-right: 3%
+}
+#transactions > table tr:last-child td {
+    border-bottom: none;
+}
+
+#transactions a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+#AddOnTransactions {
+    background-color: #ffff;
+    width: 80%;
+    height: fit-content;
+    min-height: 30%;
+    border: solid .5px lightgray;
+    border-radius: 10px;
+    transform: translateY(-8%);
+    margin: 0 auto;
+    padding: 2% 0 1% 0;
+    margin-bottom: 2%;
+}
+
+#AddOnTransactions > table {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+#AddOnTransactions > table tr:first-child td {
+    font-weight: bold;
+}
+#AddOnTransactions > table tr td {
+    line-height: 6vh;
+    border-bottom: solid 1px lightgray;
+}
+#AddOnTransactions > table tr td:first-child {
+    padding-left: 3%;
+}
+#AddOnTransactions > table tr td:last-child{
+    text-align: right;
+    padding-right: 3%
+}
+#AddOnTransactions > table tr:last-child td {
+    border-bottom: none;
+}
+
+#AddOnTransactions a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+#ValidatedTransactions {
+    background-color: #ffff;
+    width: 80%;
+    height: fit-content;
+    min-height: 30%;
+    border: solid .5px lightgray;
+    border-radius: 10px;
+    transform: translateY(-8%);
+    margin: 0 auto;
+    padding: 2% 0 1% 0;
+    margin-bottom: 2%;
+}
+
+#ValidatedTransactions > table {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+#ValidatedTransactions > table tr:first-child td {
+    font-weight: bold;
+}
+#ValidatedTransactions > table tr td {
+    line-height: 6vh;
+    border-bottom: solid 1px lightgray;
+}
+#ValidatedTransactions > table tr td:first-child {
+    padding-left: 3%;
+}
+#ValidatedTransactions > table tr td:last-child{
+    text-align: right;
+    padding-right: 3%
+}
+#ValidatedTransactions > table tr:last-child td {
+    border-bottom: none;
+}
+
+#ValidatedTransactions a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+#titleOfTable {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#mid-info {
+    background-color: #ffff;
+    width: 80%;
+    height: 17%;
+    transform: translateY(-40%);
+    border-radius: 10px;
+    margin: 0 auto;
+    border: solid .5px lightgray;
+    display: flex;
+    justify-content: center;
+}
+
+#mid-info-left, #mid-info-right {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#mid-info-left {
+    width: 27%;
+    border-right: solid 1px lightgrey;
+    justify-content: space-between;
+}
+
+#mid-info-right {
+    width: 67%;
+    justify-content: center;
+}
+
+#mid-info-right > div {
+    margin-left: 5%;
+}
+
+.mid-details {
+    display: flex;
+    align-items: center;
+    height: 50%;
+}
+
+.mid-details > img {
+    height: 30%;
+    margin-right: 3%;
+}
+
+.mid-details > div > p.detail-title {
+    font-size: 1.4vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+}
+.mid-details > div > p.detail-value {
+    font-size: 1.8vh;
+    /* font-weight: bold; */
+    margin-top: 3%;
+    letter-spacing: .05vh;
+    font-family: 'lexenddeca', 'Times New Roman', Times, serif;
+}
+
+.instruc {
+    font-size: 7vh;
+    margin-top: 2%;
+}
+
+#search-btn {
+    outline: none;
+    border: none;
+    font-family: 'lexenddeca', Arial, Helvetica, sans-serif;
+    font-size: 1.8vh;
+    padding: .8% 2%;
+    background-color: #ffff;
+    border-radius: 7px;
+    margin-left: 1%;
+    cursor: pointer;
+}

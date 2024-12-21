@@ -1,0 +1,64 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.2.7-rc.0/web3.min.js"></script>
+    <link rel="stylesheet" href="css/new_product.css">
+    <title>Equinox</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div id="nav">
+        <img src="img/m_logo.png" alt="logo" id="logo">
+        <p class="merchant-side">Merchant Side</p>
+        <a class="back merchant-side" href="javascript:history.back()">Back</a>
+    </div>
+
+    <div id="title">
+        <p>Product Details</p>
+    </div>
+
+    <div id="content">
+
+        <div id="info-block-1" class="block">
+            <div>
+                <p class="rtitle">Product Name:</p>
+                <input type="text" name="prod-name" id="prod-name" value="" class="rvalue">
+            </div>
+            <div>
+                <p class="rtitle">Category:</p>
+                <select name="cat" id="cat" class="rvalue">
+                    <option value="meat">Meat</option>
+                    <option value="vegetable">Vegetable</option>
+                    <option value="fruit">Fruit</option>
+                </select>
+            </div>
+            <div>
+                <p class="rtitle">Description:</p>
+                <textarea name="prod-des" id="prod-des" class="rvalue"></textarea>
+            </div>
+            <div>
+                <p class="rtitle">Price:</p>
+                <input type="number" name="prod-price" id="prod-price" value="" class="rvalue"> MGT
+            </div>
+            <div>
+                <p class="rtitle">Stock:</p>
+                <input type="number" name="prod-stock" id="prod-stock" value="" class="rvalue">
+            </div>
+        </div>
+
+    </div>
+    <div id="tool">
+        <a href="javascript:history.back()">Cancel</a>
+        <input type="button" name="addnew" id="addnew" value="Add" onclick="addProduct()">
+    </div>
+</body>
+<script src="js/connectContract.js"></script>
+<script src="js/new_product.js"></script>
+<script>
+    accessToMetamask();
+</script>
+
+</html>

@@ -1,0 +1,90 @@
+:root {
+    --primary-color: #857C91;
+    --white-color: #FAFBFD;
+    --standout-color: #E894A2;
+    --deco-color: #FAEAFF;
+    --link-color: #5B7C97;
+    --green-color: #50FBDE;
+
+    --b-primary-color: #7C9188;
+    --b-list-color: #B1C7BD;
+    --b-list-darker-color: #8eaa9e;
+
+    --m-primary-color: #aa9b82;
+    --m-list-color: #B4AA99;
+    --m-list-darker-color: #948b7c;
+
+    --o-primary-color: #AA8290;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+@font-face {
+    font-family: 'shadowsintolight';
+    src: url(../font/Shadows_Into_Light/ShadowsIntoLight-Regular.ttf);
+}
+@font-face {
+    font-family: 'lexenddeca';
+    src: url(../font/Lexend_Deca/LexendDeca-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: 'satisfy';
+    src: url(../font/Satisfy/Satisfy-Regular.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--white-color);
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10%;
+    margin: 0 5%;
+}
+
+#logo {
+    width: 10%;
+}
+
+.buyer-side, .merchant-side, .owner-side, .main-side {
+    font-weight: bold;
+    font-family: 'satisfy', Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+}
+
+.buyer-side {
+    color: var(--b-primary-color);
+    border-color: var(--b-primary-color);
+}
+
+.merchant-side {
+    color: var(--m-primary-color);
+    border-color: var(--n-primary-color);
+}
+
+.owner-side {
+    color: var(--o-primary-color);
+    border-color: var(--o-primary-color);
+}
+
+.main-side {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.back {
+    outline: none;
+    border: solid 3px;
+    text-decoration: none;
+    padding: 0 2%;
+    border-radius: 10px;
+}

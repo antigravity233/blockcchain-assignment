@@ -1,0 +1,165 @@
+@import 'root_style.css';
+
+#content {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+
+#title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.5vh;
+    font-weight: bold;
+    margin: 2% 0;
+    background-color: var(--b-primary-color);
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#title > p {
+    width: 80%;
+    /* color: var(--white-color); */
+}
+
+#title > input {
+    width: 10%;
+    text-align: center;
+    text-decoration: none;
+    border: solid 3px white;
+    color: white;
+    background-color: transparent;
+    font-weight: bold;
+    font-family: 'lexenddeca', Arial, Helvetica, sans-serif;
+    padding: .5% 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: ease .1s;
+}
+
+#title > input:hover {
+    background-color: white;
+    color: var(--b-primary-color);
+}
+
+.block {
+    margin-bottom: 2%;
+    border-radius: 5px;
+    border: solid 1px lightgrey;
+    background-color: white;
+    padding: 2% 0;
+}
+
+.block > div {
+    width: 93%;
+    margin: 0 auto;
+    display: flex;
+}
+
+p.rtitle {
+    width: 25%;
+    margin: .5% 0;
+    font-size: 2.1vh;
+}
+
+p.rvalue {
+    width: 75%;
+    align-content: center;
+}
+
+p#prod-title {
+    font-weight: bold;
+    margin-left: 3.5%;
+}
+
+#prod-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3%;
+    align-items: start;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    width: 27%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px lightgrey;
+    margin-bottom: 5%;
+    padding: 4% 0 1% 0;
+    min-height: 30vh;
+}
+
+.product:not(.p3) {
+    margin-right: 9.5%;
+}
+
+.product > *:not(.prod-img) {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.prod-name-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.prod-name-price {
+    font-family: 'lexenddeca', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    align-items: end;
+    margin-bottom: 2vh !important;
+}
+
+.prod-price {
+    font-size: 2.9vh;
+}
+
+.prod-name {
+    font-size: 2.5vh;
+    color: var(--b-primary-color);
+}
+
+.prod-des {
+    min-height: 10vh;
+    max-height: 20vh;
+    overflow-y: scroll;
+    line-height: 2.5vh;
+    font-size: 1.9vh;
+}
+
+.prod-btn {
+    margin-top: 4vh !important;
+    outline: none;
+    background-color: transparent;
+    border: solid 3px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: ease .1s;
+    font-family: 'lexenddeca', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 2vh;
+    text-align: center;
+    padding: 1% 0;
+}
+.prod-btn:hover {
+    background-color: var(--b-primary-color);
+    border-color: var(--b-primary-color);
+}
+
+.temp-cat {
+    display: flex;
+    justify-content: right;
+}
+
+.prod-cat {
+    border: solid 3px var(--b-primary-color);
+    color: var(--b-primary-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: .5% 2%;
+    margin-top: 4%;
+    border-radius: 5px;
+}

@@ -1,0 +1,138 @@
+@import 'root_style.css';
+
+#background-banner {
+    background-color: var(--m-primary-color);
+    height: 30%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+#search-bar {
+    height: 17%;
+    width: 70%;
+}
+
+#filter, #keyword {
+    background-color: #ffff;
+    outline: none;
+    border: solid .5px lightgray;
+    padding: .7%;
+    height: 100%;
+}
+
+#filter {
+    width: 11%;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+#keyword {
+    width: 35%;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    padding-left: 2%;
+    font-size: 1.7vh;
+}
+
+p#title {
+    font-weight: bold;
+    margin-left: 3.5%;
+    margin-bottom: 3%;
+}
+
+#product-list {
+    background-color: #ffff;
+    width: 80%;
+    height: fit-content;
+    min-height: 30%;
+    border: solid .5px lightgray;
+    border-radius: 10px;
+    transform: translateY(-20%);
+    margin: 0 auto;
+    padding: 2% 0 1% 0;
+    margin-bottom: 5%;
+}
+
+#product-list > .product {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2% 3%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    background-color: var(--m-list-color);
+    align-items: center;
+}
+
+.product > div {
+    display: flex;
+    width: 96%;
+}
+
+.product {
+    font-family: 'lexenddeca', Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+.num {
+    width: 10%;
+}
+.prod-name {
+    width: 50%;
+}
+.prod-stock {
+    width: 20%;
+}
+.prod-price {
+    width: 20%
+}
+
+.product img {
+    width: 1.2%;
+}
+
+.product p span {
+    font-size: 1.7vh;
+    color: #56626d;
+    margin-right: 1%;
+}
+
+#product-list > .product:nth-child(odd) {
+    background-color:  var(--m-list-darker-color);
+}
+
+#newproduct {
+    width: 10%;
+    text-align: center;
+    text-decoration: none;
+    border: solid 3px white;
+    color: white;
+    font-weight: bold;
+    font-family: 'lexenddeca', Arial, Helvetica, sans-serif;
+    padding: .5% 0;
+    border-radius: 10px;
+    transition: ease .1s;
+    margin-right: 10%;
+}
+
+#newproduct:hover {
+    background-color: white;
+    color: var(--m-primary-color);
+}
+
+#temprow {
+    display: flex;
+    justify-content: space-between;
+}
+#balance {
+    margin-right: 5%;
+    font-family: 'lexenddeca', Arial, Helvetica, sans-serif;
+    color: gray;
+}
+
+#balance span {
+    color: black;
+    font-weight: bold;
+}

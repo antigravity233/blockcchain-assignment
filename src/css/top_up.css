@@ -1,0 +1,95 @@
+@import 'root_style.css';
+
+
+#content {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 2%;
+}
+
+#title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.5vh;
+    font-weight: bold;
+    margin: 2% 0;
+    background-color: var(--b-primary-color);
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#title > p {
+    width: 80%;
+}
+
+#title p > span {
+    font-size: 2vh;
+}
+
+.block {
+    margin-bottom: 2%;
+    border-radius: 5px;
+    border: solid 1px lightgrey;
+    background-color: white;
+    padding: 2% 0;
+}
+
+.block > div {
+    width: 93%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+p.rtitle {
+    width: 25%;
+    margin: .5% 0;
+    font-size: 2.1vh;
+}
+
+input.rvalue {
+    width: 50%;
+    outline: none;
+    border: none;
+    font-size: 2vh;
+    border-bottom: solid 2px var(--b-primary-color);
+}
+
+.block a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+#tool {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 5%;
+}
+
+#tool a, #tool input#topup{
+    font-family: 'lexenddeca', 'Times New Roman', Times, serif;
+    font-size: 2vh;
+    font-weight: bold;
+    width: 15vh;
+    text-align: center;
+    padding: 1% 0;
+    border-radius: 10px;
+    margin-left: 2%;
+}
+
+#tool a {
+    text-decoration: none;
+    border: solid 3px var(--b-primary-color);
+    color: var(--b-primary-color);
+}
+
+#tool input#topup {
+    background-color: var(--b-primary-color);
+    outline: none;
+    border: none;
+    cursor: pointer;
+}

@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.2.7-rc.0/web3.min.js"></script>
+    <link rel="stylesheet" href="css/top_up.css">
+    <title>Equinox</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <div id="nav">
+        <img src="img/b_logo.png" alt="logo" id="logo">
+        <p class="buyer-side">Buyer Side</p>
+        <a class="back buyer-side" href="javascript:history.back()">Back</a>
+        
+    </div>
+
+    <div id="title">
+        <p>Product Details</p>
+    </div>
+
+    <div id="content">
+
+        <div id="info-block-1" class="block">
+            <div>
+                <p class="rtitle">Top up amount (1 ETH = 1000 MGT):</p>
+                <input type="number" name="topup" id="topup" class="rvalue">
+            </div>
+        </div>
+
+    </div>
+    <div id="tool">
+        <a href="javascript:history.back()">Cancel</a>
+        <input type="button" name="topup" id="topup" value="Top up" onclick="topUp()">
+    </div>
+</body>
+<script src="js/connectContract.js"></script>
+<script src="js/top_up.js"></script>
+<script>
+    accessToMetamask();
+</script>
+</html>
